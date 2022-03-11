@@ -10,12 +10,22 @@
 .character {
   display: grid;
   grid-template-rows: 1.5fr 1fr 2fr;
-  height: 700px;
-  width: 200px;
+  height: 800px;
+  width: 300px;
 }
 
 .bg {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+footer {
+  height: 30px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #7F055F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
