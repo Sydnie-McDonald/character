@@ -14,14 +14,8 @@ export default function Main() {
 
   return (
     <main>
-      <Controls setHead={setHead} setMiddle={setMiddle} setBottom={setBottom} />
+      <Controls setHead={setHead} setMiddle={setMiddle} setBottom={setBottom} setCatchphrase={setCatchphrase} setCatchphrases={setCatchphrases} catchphrases={catchphrases} catchphrase={catchphrase} />
       <Display head={head} middle={middle} bottom={bottom} />
-      <Catchphrases
-        setCatchphrase={setCatchphrase}
-        setCatchphrases={setCatchphrases}
-        catchphrase={catchphrase}
-        catchphrases={catchphrases}
-      />
     </main>
   );
 }

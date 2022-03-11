@@ -7,7 +7,7 @@ export default function Controls({ setHead, setMiddle, setBottom, catchphrase, s
     setCatchphrases((prevState) => [...prevState, catchphrase]);
     setCatchphrase('');
   };
-  
+
   return (
     <div className="left">
       <div className="picker">
@@ -41,6 +41,14 @@ export default function Controls({ setHead, setMiddle, setBottom, catchphrase, s
           <input id="catchphrase-input" value={catchphrase} onChange={(e) => setCatchphrase(e.target.value)} />
         </label>
         <button onClick={saveCatchphrase}>Add</button>
+      </div>
+      <div>
+        <h4>Your Catchphrases</h4>
+        <ul>
+          {catchphrases.map((phrase) => (
+            <li key={phrase}>{phrase}</li>
+          ))}
+        </ul>
       </div>
     </div >
   );
