@@ -1,7 +1,13 @@
 import './Controls.css';
 import '../Catchphrases/Catchphrases';
 
-export default function Controls({ setHead, setMiddle, setBottom, catchphrase, setCatchphrase, saveCatchphrase }) {
+export default function Controls({ setHead, setMiddle, setBottom, catchphrase, setCatchphrase, setCatchphrases, catchphrases }) {
+
+  const saveCatchphrase = () => {
+    setCatchphrases((prevState) => [...prevState, catchphrase]);
+    setCatchphrase('');
+  };
+  
   return (
     <div className="left">
       <div className="picker">
@@ -31,9 +37,11 @@ export default function Controls({ setHead, setMiddle, setBottom, catchphrase, s
             <option value="blue">Blue Jeans</option>
           </select>
         </label>
-        <input id="catchphrase-input" value={catchphrase} onChange={(e) => setCatchphrase(e.target.value)} />
+        <label>Add A Catchphrase!
+          <input id="catchphrase-input" value={catchphrase} onChange={(e) => setCatchphrase(e.target.value)} />
+        </label>
         <button onClick={saveCatchphrase}>Add</button>
       </div>
-    </div>
+    </div >
   );
 }
