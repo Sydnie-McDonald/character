@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import Controls from '../Controls/Controls';
 import Display from '../Display/Display';
-import Catchphrases from '../Catchphrases/Catchphrases';
+
 
 export default function Main() {
   const [head, setHead] = useState('bird');
