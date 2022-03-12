@@ -11,7 +11,7 @@ export default function Controls({ setHead, setMiddle, setBottom, catchphrase, s
   return (
     <div className="left">
       <div className="picker">
-        <label>
+        <label className="label">
           Head
           <select id="head-dropdown" onChange={(e) => setHead(e.target.value)}>
             <option value="bird">Bird</option>
@@ -20,7 +20,7 @@ export default function Controls({ setHead, setMiddle, setBottom, catchphrase, s
             <option value="horse">Horse</option>
           </select>
         </label>
-        <label>
+        <label className="label">
           Middle
           <select id="middle-dropdown" onChange={(e) => setMiddle(e.target.value)}>
             <option value="blue">Blue</option>
@@ -29,7 +29,7 @@ export default function Controls({ setHead, setMiddle, setBottom, catchphrase, s
             <option value="red">Red</option>
           </select>
         </label>
-        <label>
+        <label className="label">
           Bottom
           <select id="bottom-dropdown" onChange={(e) => setBottom(e.target.value)}>
             <option value="leg">Single Leg</option>
@@ -37,7 +37,7 @@ export default function Controls({ setHead, setMiddle, setBottom, catchphrase, s
             <option value="blue">Blue Jeans</option>
           </select>
         </label>
-        <label>Add A Catchphrase!
+        <label className="label">Add A Catchphrase!>
           <input id="catchphrase-input" value={catchphrase} onChange={(e) => setCatchphrase(e.target.value)} />
         </label>
         <button onClick={saveCatchphrase}>Add</button>
