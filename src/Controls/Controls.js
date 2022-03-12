@@ -37,13 +37,14 @@ export default function Controls({ setHead, setMiddle, setBottom, catchphrase, s
             <option value="blue">Blue Jeans</option>
           </select>
         </label>
+
         <label className="label">Add A Catchphrase!
           <input id="catchphrase-input" value={catchphrase} onChange={(e) => setCatchphrase(e.target.value)} />
         </label>
         <button onClick={saveCatchphrase}>Add</button>
       </div>
       <div>
-        <h4>Your Catchphrases</h4>
+        <h4>Your Catchphrases </h4>
         <ul>
           {catchphrases.map((phrase) => (
             <li key={phrase}>{phrase}</li>

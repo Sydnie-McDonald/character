@@ -1,0 +1,9 @@
+main {
+  
+    display: flex;
+    background-color: #7F055F;
+    margin: 0 auto;
+    max-width: 100%vw;
+    justify-content: center;
+    align-items: center;
+  }
