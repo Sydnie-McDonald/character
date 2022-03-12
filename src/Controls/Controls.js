@@ -38,7 +38,7 @@ export default function Controls({ setHead, setMiddle, setBottom, catchphrase, s
           </select>
         </label>
 
-        <label className="label">Add A Catchphrase!>
+        <label className="label">Add A Catchphrase!
           <input id="catchphrase-input" value={catchphrase} onChange={(e) => setCatchphrase(e.target.value)} />
         </label>
         <button onClick={saveCatchphrase}>Add</button>
