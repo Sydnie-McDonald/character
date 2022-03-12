@@ -10,7 +10,7 @@
 .character {
   display: grid;
   grid-template-rows: 1.5fr 1fr 2fr;
-  height: 800px;
+  height: 640px;
   width: 300px;
 }
 
